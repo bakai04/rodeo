@@ -1,0 +1,34 @@
+.about__us__first__block__flex__box{
+  display: flex;
+  padding-bottom: 60px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.about__us__first__block__text__box{
+  width: 50%;
+  padding: 60px 0 60px 60px;
+  color: white;
+}
+.about__us__first__block__title{
+  font-size: 6vw;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+.about__us__first__block__subtitle{
+  font-size: calc(0.6vh + 0.9rem);
+  text-transform: uppercase;
+  line-height: 5vh;
+  width: 85%;
+}
+.about__us__first__block__img__box{
+  width: 40%;
+  padding-right: -15%;
+
+}
+.about__us__first__block__img{
+border-radius: 15px;
+  object-fit: cover;
+  width: 100%;
+  height: 80vh
+}

@@ -1,0 +1,28 @@
+.main{
+  width: 100%;
+  min-height: 600px;
+  &__preview{
+    width: 100%;
+    position: relative;
+    background-image: url("https://cdn.discordapp.com/attachments/978515025473966083/1081863745648734208/photo_2023-02-27_21-15-071_2.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    padding-left: 7vw;
+    padding-top: 5vw;
+    padding-bottom: 180px;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+  &__title{
+    color: #fff;
+    font-size: 9vw;
+    font-weight: 700;
+    line-height: .8em;
+    margin-right: 5vw;
+    position: relative;
+    text-shadow: #000 0 0 0.5em;
+    z-index: 1;
+  }
+}

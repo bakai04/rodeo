@@ -1,0 +1,173 @@
+.registration__form__box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 10;
+  overflow: auto;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reg__box {
+  border: 3px solid white;
+  width: 50%;
+  padding: 40px;
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+  z-index: 10;
+}
+.reg__box .reg__box__title{
+  text-align: center;
+  color: white;
+  width: 80%;
+  font-size: 26px;
+  padding-top: 0;
+  text-transform: uppercase;
+  margin: 0 auto 20px;
+}
+.reg__box .user__box {
+  position: relative;
+}
+
+.reg__box h3{
+  padding-top: 20px;
+  color: red;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.reg__box .user__box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.reg__box .user__box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.reg__box .user__box input:focus ~ label,
+.reg__box .user__box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #bd9b60;
+  font-size: 12px;
+}
+
+.reg__btn {
+  position: relative;
+  border-radius: 12px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 4px;
+  background: none;
+  margin: 40px auto 0;
+  border: 2px solid #bd9b60;
+  display: block;
+  cursor: pointer;
+}
+
+.reg__btn:hover {
+  background: #C19357;
+}
+
+.rules{
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+   p{
+
+     color: white;
+     margin-bottom: 15px;
+  }
+}
+
+.confirmation__form{
+  border: 3px solid #bd9b60;
+  width: 50%;
+  padding: 40px;
+
+  background: rgb(0,0,0);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+  z-index: 10;
+  color: white;
+  text-align: center;
+  &__title{
+    text-transform: uppercase;
+    width: 70%;
+    margin: 0 auto 20px;
+  }
+  &__btn{
+    border-radius: 12px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    background: none;
+    margin: 40px auto 0;
+    border: 2px solid white;
+    display: block;
+    cursor: pointer;
+    &:hover{
+      background: #C19357;
+      border: 2px solid #bd9b60;
+    }
+  }
+  &__btn__dis{
+    border-radius: 12px;
+    padding: 10px 20px;
+    color: lightgray;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    background: gray;
+    margin: 40px auto 0;
+    border: 2px solid white;
+    display: block;
+
+  }
+  &__checkbox{
+    display: block;
+    padding-top: 30px;
+    text-transform: uppercase;
+    input{
+      margin-right: 15px;
+      background: none;
+    }
+  }
+}
+

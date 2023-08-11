@@ -1,0 +1,109 @@
+.wrapper__bg {
+    min-height: 45vw;
+    overflow-y: hidden;
+
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+        .title {
+            color: #fff;
+            font-size: 8vw;
+            font-weight: 700;
+            margin-bottom: 2vw;
+            text-align: center;
+            margin-top: 2vw;
+            text-shadow: #000 0 0 2px;
+        }
+
+        .tickets__card__box {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1vw;
+            justify-content: center;
+            margin: 45px auto;
+            width: 72vw;
+
+            .tickets__card {
+                width: 100%;
+                align-items: center;
+                background: linear-gradient(0deg, #10222c -27%, transparent 129%, transparent);
+                border: 5px solid #c19357;
+                border-radius: 10px;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                height: 30vw;
+                justify-content: flex-start;
+                position: relative;
+            }
+
+            .tickets__card__img {
+                margin: auto;
+                position: absolute;
+                width: 15vw;
+            }
+
+            .tickets__card__text__box {
+                bottom: 3%;
+                color: #fff;
+                font-size: 1.5vw;
+                position: absolute;
+                text-align: center;
+            }
+        }
+
+        .tickets__baner {
+            align-items: center;
+            background: linear-gradient(169deg, #10222c -3%, transparent 66%, transparent);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid #c19357;
+            border-radius: 1rem;
+            width: 100%;
+            height: auto;
+            padding: 1vw;
+            margin: 45px auto;
+            width: 72vw;
+
+            img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: .9;
+                width: 35vw;
+            }
+
+            .baner__text {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                justify-content: end;
+                text-align: end;
+                margin-top: 12vw;
+
+                .text1 {
+                    color: #fff;
+                    font-size: 4vw;
+                    font-weight: 700;
+                    margin-bottom: 2vw;
+                }
+
+                .text2 {
+                    color: #c19357;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    font-size: 3vw;
+                    font-weight: 700;
+                    position: relative;
+                }
+
+                .text3 {
+                    color: #fff;
+                    font-size: 1.7vw;
+                }
+            }
+        }
+
+    }
+}

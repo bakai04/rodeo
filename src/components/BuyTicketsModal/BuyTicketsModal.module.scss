@@ -1,0 +1,45 @@
+.buy__tickets__modal{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0 , 0 , 0.7);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  &__content__box{
+    width: 50%;
+    background: #0f101b;
+    padding: 180px 20px 20px;
+    border-radius: 15px;
+    border: 4px solid #bd9b60;
+    position: relative;
+  }
+  &__img{
+    width: 30%;
+    position: absolute;
+    top: -50%;
+    right: 50%;
+    transform: translateX(50%);
+    //left: 0;
+    //bottom: 0;
+  }
+
+  &__text__box{
+      text-transform: uppercase;
+      margin: 0 auto;
+      line-height: 45px;
+      color: white;
+  }
+  &__text{
+    font-size: 25px;
+    margin: 0 auto 15px;
+  }
+  &__text__number{
+    font-size: 34px;
+  }
+
+}

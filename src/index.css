@@ -1,0 +1,46 @@
+@font-face {
+  src: url("./src/assets/fonts/stolzl_bold.ttf");
+  font-family: "stolzl_bold";
+  font-weight: 900;
+}
+@font-face {
+  src: url("./src/assets/fonts/stolzl_regular.ttf");
+  font-family: "stolzl_regular";
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  list-style: none;
+  font-family: "stolzl_regular", sans-serif;
+}
+
+.container {
+  max-width: 90%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url("./assets/images/BG.png");
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 80vh;
+}
+
+/*.swiper-button-prev .swiper-rtl .swiper-button-prev{*/
+/*  right: var(--swiper-navigation-sides-offset,25px)  !important;*/
+/*  left: auto;*/
+/*}*/
+/*.swiper-button-prev .swiper-rtl .swiper-button-next {*/
+/*  left: var(--swiper-navigation-sides-offset,25px)  !important;*/
+/*  right: auto;*/
+/*}*/
+
+

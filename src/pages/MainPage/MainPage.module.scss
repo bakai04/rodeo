@@ -1,0 +1,109 @@
+.tickets__preview {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  height: 75vh;
+  background: rgb(94, 41, 135);
+  background: linear-gradient(180deg, #0f0f1e 5%, rgb(44, 3, 83), transparent 104%, #0F0F0F 82%);
+
+  &__title {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: calc(3vw + 3rem);
+    color: orange;
+  }
+  &__img {
+    width: 30%;
+  }
+}
+
+.tickets__btn {
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 35px 30px;
+  color: white;
+  background: #C19357;
+  border: none;
+  border-radius: 16px;
+  font-size: calc(2vh + 1rem);
+  font-weight: bold;
+  margin: 0 auto;
+  display: block;
+  transform: translateY(-5.8vw);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.nameTitle {
+  font-size: 67px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 65px;
+  color: white;
+  width: 75vw;
+  margin: 0 auto;
+  span {
+    color: #bd9b60;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.tickets__card__box {
+  padding: 40px 0;
+  display: flex;
+  //grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 100px 50px;
+  width: 90%;
+  margin: 0 auto;
+  .ticket__card {
+    text-align: center;
+    width: 47%;
+    height: 90%;
+    //height: auto;
+    cursor: pointer;
+
+    .ticket__img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      background-color: #060c0f;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .ticket__img__text {
+      color: white;
+
+      .img__text1 {
+        font-size: 2vw;
+      }
+
+      .img__text2 {
+        font-size: 1.2vw;
+      }
+
+      .img__text3 {
+        font-size: 1.2vw;
+      }
+    }
+
+    .ticket__text {
+      margin-top: 20px;
+      font-size: 2vw;
+      color: white;
+
+      .ticket__text1 {
+        color: #bd9b60;
+      }
+    }
+  }
+}
