@@ -55,6 +55,7 @@ interface IProps {
     selectedLanguage: string | undefined,
 
 }
+const url = import.meta.env.VITE_REACT_APP_BASE_URL
 const Tournaments = ({ selectedLanguage }: IProps) => {
 
     const initial = { opacity: 0 };
@@ -70,7 +71,7 @@ const Tournaments = ({ selectedLanguage }: IProps) => {
     const [tournaments, setTournaments] = useState<ITournamentResponce | null>(null)
 
     useEffect(() => {
-        axios(`http://90.156.209.53:12500/api/v1/tournaments/get-tournament-page/${selectedLanguage}/`)
+        axios(`${url}tournaments/get-tournament-page/${selectedLanguage}/`)
             .then(res => setTournaments(res.data))
     }, [selectedLanguage])
 

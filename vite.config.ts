@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import viteEnvCompatible from 'vite-plugin-env-compatible';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -8,8 +9,11 @@ export default defineConfig({
     strictPort: true,
     port: 3000,
   },
-  plugins: [react()],
-  define: {
-    'process.env': {}
-  }
+  plugins: [
+    react(),
+  ],
+  // define: {
+  //   'process.env': {}
+  // }
 });
+

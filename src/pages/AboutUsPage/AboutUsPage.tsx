@@ -79,11 +79,12 @@ interface IProps {
 
 }
 
+const url = import.meta.env.VITE_REACT_APP_BASE_URL
 const AboutUsPage = ({selectedLanguage}:IProps) => {
     const [aboutUs, setAboutUs] = useState<IAboutUs | null>(null)
 
     useEffect(() => {
-        axios(`http://90.156.209.53:12500/api/v1/about-us/get-about-us-page/${selectedLanguage}/`)
+        axios(`${url}about-us/get-about-us-page/${selectedLanguage}/`)
             .then(res => setAboutUs(res.data))
     },[selectedLanguage])
 

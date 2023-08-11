@@ -27,15 +27,15 @@ interface ILanguageProps {
     selectedLanguage: string | undefined,
 }
 
+const url = import.meta.env.VITE_REACT_APP_BASE_URL
 const GalleryPage = ({ selectedLanguage }: ILanguageProps) => {
     const [data, setData] = useState<IGalery | null>(null)
     const [tournaments, setTournaments] = useState<ITournamentResponce | null>(null)
-    const url = process.env.REACT_APP_BASE_URL
 
     useEffect(() => {
-        axios(`http://90.156.209.53:12500/api/v1/gallery/get-gallery-page/${selectedLanguage}/`)
+        axios(`${url}gallery/get-gallery-page/${selectedLanguage}/`)
             .then(res => setData(res.data))
-        axios(`http://90.156.209.53:12500/api/v1/tournaments/get-tournament-page/${selectedLanguage}/`)
+        axios(`${url}tournaments/get-tournament-page/${selectedLanguage}/`)
             .then(res => setTournaments(res.data))
     }, [selectedLanguage])
 

@@ -136,14 +136,14 @@ interface IProps {
     selectedLanguage: string | undefined,
 
 }
-
+const url = import.meta.env.VITE_REACT_APP_BASE_URL
 const ChampionsPage = ({ selectedLanguage }: IProps) => {
     const [champions, setChampions] = useState([])
     const [currentTournament, setCurrenTournament] = useState<IChampion | null>(null)
 
 
     useEffect(() => {
-        axios(`http://90.156.209.53:12500/api/v1/champions/get-champion-page/${selectedLanguage}/`)
+        axios(`${url}champions/get-champion-page/${selectedLanguage}/`)
             .then(res => {
                 setChampions(res.data.data)
                 setCurrenTournament(res.data.data[0])

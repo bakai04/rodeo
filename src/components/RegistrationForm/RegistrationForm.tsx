@@ -11,7 +11,7 @@ interface FormData {
     phone_numbers: number
     confirmation: boolean
 }
-
+const url = import.meta.env.VITE_REACT_APP_BASE_URL
 const RegistrationForm = ({ handleShowModal }: any) => {
     const [showModal, setShowModal] = useState(false)
     const { register, handleSubmit, formState: { errors } } = useForm<FormData>()
@@ -29,7 +29,7 @@ const RegistrationForm = ({ handleShowModal }: any) => {
 
 
     const handleModalSubmit = () => {
-        axios.post("http://90.156.209.53:12500/api/v1/news/submit-application", JSON.stringify(formData))
+        axios.post(`${url}news/submit-application`, JSON.stringify(formData))
         .then(resp => console.log(resp, "dfdf"))
         setShowModal(false);
         handleShowModal()      
